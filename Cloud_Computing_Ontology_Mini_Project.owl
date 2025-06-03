@@ -1,0 +1,2828 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#"
+     xml:base="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology">
+        <rdfs:comment xml:lang="en">This is an ontology that standardizes the description, classification, and management of cloud resources and services across different cloud providers. This ontology will facilitate automated resource provisioning, interoperability, and service discovery.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#builtBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#builtBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#composedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#composedOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasComponent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#followsPattern -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#followsPattern"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasAvailabilityFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasAvailabilityFeature"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasComplianceFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasComplianceFeature"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasComponent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasCostModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasCostModel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasPerformanceMetric -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasPerformanceMetric"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasProperty -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasReliabilityFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasReliabilityFeature"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasSecurityFeature -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasSecurityFeature"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasServiceModel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasServiceModel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasTenancy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasTenancy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#includes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#includes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine_Service"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#includesComponent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#includesComponent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#includes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composite_Function"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Service_Component"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isProvidedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isProvidedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#usesStandardizedTerm"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#managedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#managedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#operatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#operatedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#optimizedFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#optimizedFor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#ownedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#ownedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#suitableFor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#suitableFor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#usesStandardizedTerm -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#usesStandardizedTerm"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasBandwidth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasBandwidth"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasCPUCount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasCPUCount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compute_Resource"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasColdStartLatency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasColdStartLatency"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasLatency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasLatency"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasMemory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasMemory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compute_Resource"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasMemoryConsumption -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasMemoryConsumption"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasNetworkThroughput -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasNetworkThroughput"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasPrice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Resource"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasRequestDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasRequestDuration"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasSLA -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasSLA"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasStorageTier -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasStorageTier"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AI_ML_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AI_ML_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#API_Standard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#API_Standard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Interoperability_Mapping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Analytics_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Analytics_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#CRM_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Email_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scale">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Scale_Sets"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Warehouse"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Database_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scaling_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scaling_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Availability_And_Reliability_Attribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Availability_And_Reliability_Attribute">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Service_Metadata_Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Availability_Feature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Availability_Feature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Availability_And_Reliability_Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Block_Storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Block_Storage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compute_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Object_Storage_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Block_Storages -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Block_Storages">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#GCS_Bucket"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_Block_Storage"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Warehouse"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Database_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#CRM_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#CRM_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Email_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Computing_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Computing_Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Resource">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#managedBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service_Provider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#API_Standard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composite_Function"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composition_Pattern"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Interoperability_Mapping"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Optimization_Goal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Performance_Metric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Recommendation_Engine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Workload_Profile"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isProvidedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service_Provider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Database_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service_Provider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service_Provider"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compliance_Feature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compliance_Feature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_And_Compliance_Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composite_Function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composite_Function">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#composedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Service_Component"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#followsPattern"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composition_Pattern"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composite_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composite_Service"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composition_Pattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composition_Pattern"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compute_Instance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compute_Instance">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_EC2"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_ECS"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_VM"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#GCP_Compute_Engine"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Virtual_Server"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_VM"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Database_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compute_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compute_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IaaS_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasPerformanceMetric"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Performance_Metric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#DNS_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Load_Balancer_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Object_Storage_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Gateway_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Network_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Container_Orchestration_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Container_Orchestration_Service">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Kubernetes_Service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Model">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Service_Metadata_Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Optimization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Optimization"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#DNS_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#DNS_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#DNS_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#DNS_Service">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_DNS"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Route_53"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Warehouse"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Database_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasServiceModel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS_Resource"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Warehouse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Warehouse">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_RedShift"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Database_Service"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Function_as_a_Service"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Load_Balancer"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Object_Storage"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Serverless_Computing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Gateway"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Network_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Warehouse_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Warehouse_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Database_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Database_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Database_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Database_Service">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_ApsaraDB"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Database"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_Database_Service"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Function_as_a_Service"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Object_Storage"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Serverless_Computing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Gateway"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Network_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Email_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Email_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#usesStandardizedTerm"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#API_Standard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Function_As_A_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Function_As_A_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compute_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Function_as_a_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Function_as_a_Service">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_Function_Compute"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Functions"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_Functions"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Hybrid_Cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Hybrid_Cloud">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Private_Cloud"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Public_Cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IaaS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IaaS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Computing_Model"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Kubernetes_Service"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IaaS_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IaaS_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Resource"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IaaS"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasServiceModel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IaaS"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Interoperability_Mapping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Interoperability_Mapping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Service_Metadata_Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Kubernetes_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Kubernetes_Service">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_EKS"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_Container_Service"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_AKS"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#GCP_GKE"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Kubernetes_Service"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_Kubernetes_Engine"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Container_Orchestration_Service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS_Resource"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Load_Balancer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Load_Balancer">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_SLB"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_LB"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#ELB"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Load_Balancer"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_Load_Balancer"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Load_Balancer_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Load_Balancer_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#ML_Based_Selector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#ML_Based_Selector">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#optimizedFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Perfomance_Maximization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Tenant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Tenant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Tenancy_Model"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Single_Tenant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IaaS_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Object_Storage_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Object_Storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Object_Storage">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_S3"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_OSS"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Object_Storage"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_Object_Storage"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Object_Storage_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Object_Storage_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isProvidedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service_Provider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Optimization_Goal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Optimization_Goal"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Organization"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Computing_Model"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Recommendation_Engine"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Gateway_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine_Service"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Network_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Resource"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasServiceModel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Perfomance_Maximization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Perfomance_Maximization"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Performance_Metric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Performance_Metric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Service_Metadata_Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Private_Cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Private_Cloud">
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Public_Cloud"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Public_Cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Public_Cloud">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#managedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service_Provider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Recommendation_Engine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Recommendation_Engine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Public_Cloud"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#includes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#ML_Based_Selector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#includes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Rules_Based_Selector"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Region"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Relational_Database -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Relational_Database">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_RDS"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_SQL_Database"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reliability_Feature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reliability_Feature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Availability_And_Reliability_Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Rules_Based_Selector -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Rules_Based_Selector">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#optimizedFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Optimization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Computing_Model"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Gateway_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine_Service"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Network_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Resource"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasServiceModel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_And_Compliance_Attribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_And_Compliance_Attribute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_And_Compliance_Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Serverless_Computing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Serverless_Computing">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_Lambda"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Functions"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_VM"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Service_Component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Service_Component"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Service_Metadata_Attribute -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Service_Metadata_Attribute"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Single_Tenant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Single_Tenant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Tenancy_Model"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Service_Metadata_Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IaaS_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Gateway_Resource"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Network_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Tenancy_Model -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Tenancy_Model"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Gateway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Gateway">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_VGW"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_SAG"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_VPN_Gateway"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Transit_Gateway"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Gateway_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Gateway_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compute_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IaaS"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#includes"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Network_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Network_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Network_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Network_Service">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_VPC"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_VPC"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_VNet"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_VPC"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#isReferencedBy"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_VCN"/>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Workload -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Workload"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Workload_Profile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Workload_Profile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Workload"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service_Provider"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_EC2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_EC2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine_Service"/>
+        <hasAvailabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scaling"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IAM_Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#OnDemand_Pricing"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reserved_Pricing"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Key_Pair_Authentication"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Groups"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_CPU_Workload"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Optimized_Workload"/>
+        <rdfs:comment>
+            <rdf:Description/>
+        </rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_EKS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_EKS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Container_Orchestration_Service"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Kubernetes_Service"/>
+        <hasAvailabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scaling"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regulatory_Compliance"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Role_Based_Access_Control"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_Lambda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_Lambda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Function_As_A_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IAM_Access_Control"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regulatory_Compliance"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regional_Failover"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IAM_Role_Execution"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_RDS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_RDS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Database_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regulatory_Compliance"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reserved_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Failover_Cluster"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Encryption_At_Rest"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_RedShift -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_RedShift">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Warehouse_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Encryption"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regulatory_Compliance"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#OnDemand_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Encryption_At_Rest"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Optimized_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_S3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_S3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Object_Storage_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regulatory_Compliance"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Tier_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Redundancy_Across_AZs"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Encryption_At_Rest"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_VGW -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_VGW">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Gateway_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regulatory_Compliance"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Transfer_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regional_Failover"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Tunneling"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Optimized_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_VPC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_VPC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Network_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Transfer_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Redundancy_Across_AZs"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Access_Control_List"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compliance_Feature"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Adobe_Analytics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Adobe_Analytics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Analytics_Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_ApsaraDB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_ApsaraDB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Database_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Encryption"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reserved_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Failover_Cluster"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Transparent_Data_Encryption"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Memory_Optimized_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_Cloud -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_Cloud">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service_Provider"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_Container_Service -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_Container_Service">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Container_Orchestration_Service"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Kubernetes_Service"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Role_Based_Access_Control"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_ECS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_ECS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
+        <hasAvailabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scaling"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#OnDemand_Pricing"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Spot_Pricing"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Groups"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_CPU_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_Function_Compute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_Function_Compute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Function_As_A_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Encryption"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regional_Failover"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IAM_Role_Execution"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_OSS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_OSS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Object_Storage_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Encryption"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Tier_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Encryption_At_Rest"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Optimized_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_SAG -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_SAG">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Gateway_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regulatory_Compliance"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Transfer_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Tunneling"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Optimized_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_SLB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_SLB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Load_Balancer_Resource"/>
+        <hasAvailabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scaling"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SSL_Offloading"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_VPC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_VPC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Network_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Transfer_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Access_Control_List"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Alibaba_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scaling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scaling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Availability_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Availability_Sets -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Availability_Sets">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Availability_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service_Provider"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_AKS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_AKS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Container_Orchestration_Service"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Kubernetes_Service"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Kubernetes_Security_Policies"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Availability_Sets -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Availability_Sets">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Availability_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_DNS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_DNS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#DNS_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regulatory_Compliance"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Request_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#DNSSEC"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Disk_Encryption -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Disk_Encryption">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Functions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Functions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Function_As_A_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IAM_Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regional_Failover"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Managed_Identity"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Kubernetes_Security_Policies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Kubernetes_Security_Policies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_LB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_LB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Load_Balancer_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SSL_Offloading"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_SQL_Database -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_SQL_Database">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Database_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Encryption"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regulatory_Compliance"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reserved_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Failover_Cluster"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Transparent_Data_Encryption"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Memory_Optimized_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Scale_Sets -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Scale_Sets">
+        <hasAvailabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scaling"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reserved_Pricing"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Security_Group"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_CPU_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Security_Center_Protection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Security_Center_Protection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_VM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_VM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine_Service"/>
+        <hasAvailabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Availability_Sets"/>
+        <hasAvailabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Availability_Sets"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regulatory_Compliance"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reserved_Pricing"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Spot_Pricing"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Disk_Encryption"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Security_Center_Protection"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_CPU_Workload"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Memory_Optimized_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_VNet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_VNet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Network_Resource"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Transfer_Pricing"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Security_Group"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_VPN_Gateway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_VPN_Gateway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Gateway_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regulatory_Compliance"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Transfer_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Tunneling"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Optimized_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Backend_Compute -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Backend_Compute">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composition_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Bucket_Lifecycle_Management -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Bucket_Lifecycle_Management">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Burst_To_Cloud_Pattern -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Burst_To_Cloud_Pattern">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composition_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#CPU_Utilization -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#CPU_Utilization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Performance_Metric"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cold_Start_Latency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cold_Start_Latency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Performance_Metric"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compliance_Alignment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compliance_Alignment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Optimization_Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Optimization -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Optimization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Optimization_Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#DNSSEC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#DNSSEC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#DTU_Pricing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#DTU_Pricing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Encryption -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Encryption">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compliance_Feature"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Replication_Pattern -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Replication_Pattern">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composition_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Throughput -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Throughput">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Performance_Metric"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Transfer_Pricing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Transfer_Pricing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Database_Layer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Database_Layer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composition_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Disk_IOPS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Disk_IOPS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Performance_Metric"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#ELB -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#ELB">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Load_Balancer_Resource"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SSL_Offloading"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Encryption_At_Rest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Encryption_At_Rest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Failover_Cluster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Failover_Cluster">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reliability_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Failover_Composition_Pattern -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Failover_Composition_Pattern">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composition_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Failover_Mechanism -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Failover_Mechanism">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Availability_And_Reliability_Attribute"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reliability_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Frontend_Hosting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Frontend_Hosting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composition_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#GCP_Compute_Engine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#GCP_Compute_Engine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
+        <hasAvailabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scaling"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Preemptible_Pricing"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Key_Pair_Authentication"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Groups"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Google_Cloud_Platform"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_CPU_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#GCP_GKE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#GCP_GKE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Container_Orchestration_Service"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Kubernetes_Service"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Role_Based_Access_Control"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Google_Cloud_Platform"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#GCS_Bucket -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#GCS_Bucket">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Object_Storage_Resource"/>
+        <hasAvailabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Storage"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Encryption"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regulatory_Compliance"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Tier_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Bucket_Lifecycle_Management"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Identity_and_Access_Management"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Google_Cloud_Platform"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Optimized_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#GPU_Workload -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#GPU_Workload">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Workload_Profile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Workload_Profile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Gmail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Gmail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Email_Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Google_Analytics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Google_Analytics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Analytics_Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Google_Cloud_Platform -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Google_Cloud_Platform">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service_Provider"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_CPU_Workload -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_CPU_Workload">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Workload_Profile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#HubSpot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#HubSpot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#CRM_Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Hybrid_Storage_Service -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Hybrid_Storage_Service">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composite_Service"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composition_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IAM_Access_Control -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IAM_Access_Control">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compliance_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IAM_Role_Execution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IAM_Role_Execution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service_Provider"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Database -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Database">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Database_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Encryption"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regulatory_Compliance"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reserved_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Failover_Cluster"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Transparent_Data_Encryption"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Memory_Optimized_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Functions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Functions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Function_As_A_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IAM_Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IAM_Role_Execution"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Kubernetes_Service -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Kubernetes_Service">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Container_Orchestration_Service"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Kubernetes_Service"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Load_Balancer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Load_Balancer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Load_Balancer_Resource"/>
+        <hasAvailabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scaling"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SSL_Offloading"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Object_Storage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Object_Storage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Object_Storage_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Encryption"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Tier_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Role_Based_Access_Control"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Optimized_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Transit_Gateway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Transit_Gateway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Gateway_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regulatory_Compliance"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Transfer_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regional_Failover"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Tunneling"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Optimized_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_VPC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_VPC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Network_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Transfer_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Access_Control_List"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Virtual_Server -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud_Virtual_Server">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
+        <hasAvailabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scaling"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#OnDemand_Pricing"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reserved_Pricing"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Groups"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IBM_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_CPU_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Identity_and_Access_Management -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Identity_and_Access_Management">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Key_Pair_Authentication -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Key_Pair_Authentication">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Latency_Sensitive_Workload -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Latency_Sensitive_Workload">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Workload_Profile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Managed_Identity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Managed_Identity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Mapping_ComputeInstance_to_EC2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Mapping_ComputeInstance_to_EC2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Mapping_ObjectStorage_to_S3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Mapping_ObjectStorage_to_S3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Memory_Consumption -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Memory_Consumption"/>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Memory_Optimized_Workload -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Memory_Optimized_Workload">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Workload_Profile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Microsoft_365_Email -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Microsoft_365_Email">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Email_Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Mixpanel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Mixpanel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Analytics_Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Cloud_Web_App_Stack -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Cloud_Web_App_Stack">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Composition_Pattern"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reliability_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Storage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Storage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Availability_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Access_Control_List -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Access_Control_List">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Latency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Latency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Performance_Metric"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Optimized_Workload -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Optimized_Workload">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Workload_Profile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Security_Group -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Security_Group">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Throughput -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Throughput">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Performance_Metric"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#OCCI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#OCCI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#API_Standard"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Interoperability_Mapping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#OnDemand_Pricing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#OnDemand_Pricing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Open_API -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Open_API">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#API_Standard"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Interoperability_Mapping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service_Provider"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_Block_Storage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_Block_Storage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Block_Storage"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Encryption"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Tier_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Encryption_At_Rest"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Optimized_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_Database_Service -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_Database_Service">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Database_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Encryption"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regulatory_Compliance"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#OnDemand_Pricing"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reserved_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Failover_Cluster"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Transparent_Data_Encryption"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Memory_Optimized_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_Functions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_Functions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Function_As_A_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IAM_Access_Control"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IAM_Role_Execution"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_Kubernetes_Engine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_Kubernetes_Engine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Container_Orchestration_Service"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Kubernetes_Service"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Role_Based_Access_Control"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_Load_Balancer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_Load_Balancer">
+        <hasAvailabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scaling"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SSL_Offloading"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_Object_Storage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_Object_Storage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Object_Storage_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Data_Encryption"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Tier_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Encryption_At_Rest"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Optimized_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_VCN -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_VCN">
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#OnDemand_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Security_Group"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Optimized_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_VM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud_VM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
+        <hasAvailabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scaling"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#OnDemand_Pricing"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reserved_Pricing"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Key_Pair_Authentication"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Oracle_Cloud"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_CPU_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PayAsYouGo_Pricing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Pay_as_you_go -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Pay_as_you_go">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Pay_per_Execution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Pay_per_Execution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Performance_Maximization -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Performance_Maximization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Optimization_Goal"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Preemptible_Pricing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Preemptible_Pricing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Query_Response_Time -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Query_Response_Time">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Performance_Metric"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#RAM_Usage -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#RAM_Usage">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Performance_Metric"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Redundancy_Across_AZs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Redundancy_Across_AZs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reliability_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regional_Failover -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regional_Failover">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reliability_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regulatory_Compliance -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regulatory_Compliance">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compliance_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Request_Duration -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Request_Duration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Performance_Metric"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Request_Pricing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Request_Pricing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reserved_Instance_Pricing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reserved_Instance_Pricing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reserved_Pricing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reserved_Pricing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Role_Based_Access_Control -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Role_Based_Access_Control">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Route_53 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Route_53">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#DNS_Resource"/>
+        <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Regulatory_Compliance"/>
+        <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Request_Pricing"/>
+        <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Region_Redundancy"/>
+        <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#DNSSEC"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS"/>
+        <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SSL_Offloading -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SSL_Offloading">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Salesforce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Salesforce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#CRM_Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Groups -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Groups">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SendGrid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SendGrid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Email_Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Spot_Pricing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Spot_Pricing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Latency -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Latency">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Performance_Metric"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Optimized_Workload -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Optimized_Workload">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Workload_Profile"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Tier_Pricing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Tier_Pricing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Subscription_Based -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Subscription_Based">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Model"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#System_Redundancy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#System_Redundancy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Availability_And_Reliability_Attribute"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Reliability_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Transparent_Data_Encryption -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Transparent_Data_Encryption">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Uptime_SLA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Uptime_SLA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Availability_And_Reliability_Attribute"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Availability_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Tunneling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Tunneling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Security_Feature"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Zoho_CRM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Zoho_CRM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#CRM_Resource"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#gRPC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#gRPC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#API_Standard"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Interoperability_Mapping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#vCore_Pricing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#vCore_Pricing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cost_Model"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
