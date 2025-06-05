@@ -186,13 +186,17 @@
 
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasBandwidth -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasBandwidth"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasBandwidth">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasCPUCount -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasCPUCount">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compute_Resource"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
@@ -202,41 +206,55 @@
 
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasColdStartLatency -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasColdStartLatency"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasColdStartLatency">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasLatency -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasLatency"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasLatency">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasMemory -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasMemory">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compute_Resource"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasMemoryConsumption -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasMemoryConsumption"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasMemoryConsumption">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasNetworkThroughput -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasNetworkThroughput"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasNetworkThroughput">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasPrice -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasPrice">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Resource"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
@@ -246,19 +264,28 @@
 
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasRequestDuration -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasRequestDuration"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasRequestDuration">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasSLA -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasSLA"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasSLA">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasStorageTier -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasStorageTier"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasStorageTier">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -297,6 +324,20 @@
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Email_Resource"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IaaS"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Archive_Storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Archive_Storage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasStorageTier"/>
+                <owl:hasValue>Archive</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -389,6 +430,19 @@
     
 
 
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Application -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Application">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasMemoryConsumption"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Computing_Model -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Computing_Model"/>
@@ -403,6 +457,12 @@
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#managedBy"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service_Provider"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasMemory"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -467,6 +527,33 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service_Provider"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasColdStartLatency"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</xsd:maxExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasPrice"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasSLA"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Database_Service"/>
     </owl:Class>
     
@@ -474,7 +561,14 @@
 
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service_Provider -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service_Provider"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service_Provider">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasMemory"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -564,6 +658,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasPerformanceMetric"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Performance_Metric"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasCPUCount"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#DNS_Resource"/>
@@ -738,6 +838,72 @@
     
 
 
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Fast_Execution_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Fast_Execution_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasRequestDuration"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Fast_Start_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Fast_Start_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Free_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Free_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasPrice"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:intersectionOf>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Function_As_A_Resource -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Function_As_A_Resource">
@@ -772,6 +938,126 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_Bandwidth_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_Bandwidth_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasBandwidth"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_Latency_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_Latency_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasLatency"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_Memory_App -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_Memory_App">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Application"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasMemoryConsumption"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1024</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_Memory_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_Memory_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compute_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasMemory"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_Throughput_Network -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_Throughput_Network">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasNetworkThroughput"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1000</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Hot_Access_Storage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Hot_Access_Storage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasStorageTier"/>
+                <owl:hasValue>Hot</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -865,6 +1151,29 @@
     
 
 
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Lightweight_App -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Lightweight_App">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Application"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasMemoryConsumption"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">256</xsd:maxExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Load_Balancer -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Load_Balancer">
@@ -910,6 +1219,121 @@
     
 
 
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Long_Duration_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Long_Duration_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasRequestDuration"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Low_Bandwidth_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Low_Bandwidth_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasBandwidth"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</xsd:maxExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Low_Latency_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Low_Latency_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasLatency"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</xsd:maxExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Low_Memory_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Low_Memory_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compute_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasMemory"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</xsd:maxExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Low_Throughput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Low_Throughput">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasNetworkThroughput"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</xsd:maxExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#ML_Based_Selector -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#ML_Based_Selector">
@@ -917,6 +1341,52 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#optimizedFor"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Perfomance_Maximization"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Mission_Critical_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Mission_Critical_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasSLA"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99.99</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Core_Resource -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Multi_Core_Resource">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Compute_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasCPUCount"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -936,11 +1406,52 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IaaS_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasBandwidth"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasLatency"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasNetworkThroughput"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Object_Storage_Resource"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#SaaS"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Resource"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Non_Standard_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Non_Standard_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasSLA"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90</xsd:maxExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1045,6 +1556,29 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Performance_Metric">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Service_Metadata_Attribute"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Premium_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Premium_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasPrice"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.5</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1182,6 +1716,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Serverless_Compute_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Serverless_Compute_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasColdStartLatency"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasRequestDuration"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Serverless_Computing -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Serverless_Computing">
@@ -1228,6 +1782,29 @@
     
 
 
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Slow_Start_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Slow_Start_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasColdStartLatency"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">300</xsd:minExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Standardized_Term">
@@ -1240,6 +1817,22 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Storage_Resource">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IaaS_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:complementOf>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasCPUCount"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                    </owl:Restriction>
+                </owl:complementOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasStorageTier"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#VPN_Gateway_Resource"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Network_Resource"/>
@@ -1405,6 +1998,9 @@
         <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
         <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#High_CPU_Workload"/>
         <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Optimized_Workload"/>
+        <hasCPUCount rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</hasCPUCount>
+        <hasMemory rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">16</hasMemory>
+        <hasPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.1</hasPrice>
         <rdfs:comment>
             <rdf:Description/>
         </rdfs:comment>
@@ -1428,6 +2024,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_Enhanced_Networking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_Enhanced_Networking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+        <hasNetworkThroughput rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000</hasNetworkThroughput>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_Lambda -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_Lambda">
@@ -1439,6 +2044,8 @@
         <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#IAM_Role_Execution"/>
         <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS"/>
         <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+        <hasColdStartLatency rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</hasColdStartLatency>
+        <hasRequestDuration rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</hasRequestDuration>
     </owl:NamedIndividual>
     
 
@@ -1483,6 +2090,7 @@
         <hasReliabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Redundancy_Across_AZs"/>
         <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Encryption_At_Rest"/>
         <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS"/>
+        <hasStorageTier>Cold</hasStorageTier>
     </owl:NamedIndividual>
     
 
@@ -1654,6 +2262,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Application_X -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Application_X">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Application"/>
+        <hasMemoryConsumption rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">512</hasMemoryConsumption>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scaling -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scaling">
@@ -1733,6 +2350,7 @@
         <hasSecurityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Managed_Identity"/>
         <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure"/>
         <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
+        <hasSLA rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">99.99</hasSLA>
     </owl:NamedIndividual>
     
 
@@ -1756,6 +2374,20 @@
         <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure"/>
         <suitableFor rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#General_Purpose_Workload"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Network -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Network">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Network"/>
+        <owl:assertionProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasLatency"/>
+        <owl:targetValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</owl:targetValue>
+    </rdf:Description>
     
 
 
@@ -2101,6 +2733,15 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Google_Cloud_Platform">
         <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Cloud_Service_Provider"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Google_Network -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Google_Network">
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+        <hasBandwidth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000</hasBandwidth>
     </owl:NamedIndividual>
     
 
