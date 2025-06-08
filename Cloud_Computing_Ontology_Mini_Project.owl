@@ -304,6 +304,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AI_ML_Resource">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS_Resource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#hasServiceModel"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#PaaS"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2028,6 +2034,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS_Enhanced_Networking">
         <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#AWS"/>
         <hasNetworkThroughput rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">10000</hasNetworkThroughput>
     </owl:NamedIndividual>
     
@@ -2381,6 +2388,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure_Network">
         <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Azure"/>
     </owl:NamedIndividual>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
@@ -2652,6 +2660,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#GCP_Compute_Engine">
         <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Virtual_Machine_Service"/>
         <hasAvailabilityFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Auto_Scaling"/>
         <hasComplianceFeature rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Access_Control"/>
         <hasCostModel rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Preemptible_Pricing"/>
@@ -2717,6 +2726,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Gmail">
         <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Email_Resource"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Google_Cloud_Platform"/>
     </owl:NamedIndividual>
     
 
@@ -2741,6 +2751,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Google_Network">
         <rdf:type rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Network_Resource"/>
+        <isProvidedBy rdf:resource="http://www.semanticweb.org/student/ontologies/2025/2/CloudComputingOntology#Google_Cloud_Platform"/>
         <hasBandwidth rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2000</hasBandwidth>
     </owl:NamedIndividual>
     
